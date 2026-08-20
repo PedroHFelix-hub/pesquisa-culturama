@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="culturama-favico.png" type="image/svg-xml" />
+    <link rel="icon" href="culturama-favico.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,11 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Participe da pesquisa Culturama e conte sobre seus hábitos culturais." />
     <title>Pesquisa Culturama</title>
   </head>
   <body>
     <header>
-      <img src="imgs/logo-culturama.png" alt="logo da culturama" />
+      <img src="imgs/logo-culturama.png" alt="logo da culturama"/>
+      <h1>PESQUISA CULTURAMA</h1>
     </header>
 
     <main>
@@ -24,22 +26,22 @@
           <legend>DADOS PESSOAIS</legend>
 
           <label for="user-name">Nome</label>
-          <input type="text" name="user-name" required />
+          <input type="text" name="user-name" id="user-name" required />
 
           <label for="age">Idade</label>
-          <input type="number" name="age" min="12" max="100" required />
+          <input type="number" name="age" id="age" min="12" max="100" required />
 
           <label for="birthDate">Data de Nascimento</label>
-          <input type="date" name="birthDate" required />
+          <input type="date" name="birthDate" id="birthDate" required />
 
-          <label for="Email">E-mail</label>
-          <input type="email" name="Email" required />
+          <label for="email">E-mail</label>
+          <input type="email" name="Email" id="email" required />
 
           <label for="tel">Telefone</label>
-          <input type="tel" name="tel" />
+          <input type="tel" name="tel" id="tel"/>
 
           <label for="profile-pic">Foto de Perfil</label>
-          <input type="file" name="profile-pic" />
+          <input type="file" name="profile-pic" id="profile-pic"/>
         </fieldset>
 
         <fieldset>
@@ -61,14 +63,14 @@
           </fieldset>
 
           <label for="marital-status">Estado Civil</label>
-          <select name="marital-status" id="user-marital-status">
+          <select name="marital-status" id="marital-status">
             <option value="single">Solteiro(a)</option>
             <option value="married">Casado(a)</option>
             <option value="divorced">Divorciado(a)</option>
           </select>
 
-          <label for="State">Estado onde você reside: </label>
-          <select id="estado" name="State">
+          <label for="state">Estado onde você reside: </label>
+          <select id="state" name="state">
             <option value="" selected disabled>Selecione seu estado</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -141,16 +143,16 @@
         <fieldset>
           <legend>QUAL SEU GRAU DE SATISFAÇÃO?</legend>
           <input type="radio" id="satisfaction-great" name="satisfaction" value="great-satisfaction">
-          <label for="">Muito satisfeito</label>
+          <label for="satisfaction-great">Muito satisfeito</label>
 
           <input type="radio" id="satisfaction-good" name="satisfaction" value="good-satisfaction">
-          <label for="">Bem satisfeito</label>
+          <label for="satisfaction-good">Bem satisfeito</label>
 
           <input type="radio" id="satisfaction-regular" name="satisfaction" value="regular">
-          <label for="">Ok</label>
+          <label for="satisfaction-regular">Ok</label>
 
           <input type="radio" id="satisfaction-bad" name="satisfaction" value="not-satisfaction">
-          <label for="">Não estou satisfeito</label>   
+          <label for="satisfaction-bad">Não estou satisfeito</label>   
         </fieldset>
 
         <fieldset>
