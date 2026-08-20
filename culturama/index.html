@@ -11,56 +11,82 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Participe da pesquisa Culturama e conte sobre seus hábitos culturais." />
+    <meta
+      name="description"
+      content="Participe da pesquisa Culturama e conte sobre seus hábitos culturais."
+    />
     <title>Pesquisa Culturama</title>
   </head>
   <body>
     <header>
-      <img src="imgs/logo-culturama.png" alt="logo da culturama"/>
+      <img src="imgs/logo-culturama.png" alt="Culturama" />
       <h1>PESQUISA CULTURAMA</h1>
     </header>
 
     <main>
-      <form action="" method="get">
-        <fieldset> 
+      <form action="/cadastro" method="get">
+        <fieldset>
           <legend>DADOS PESSOAIS</legend>
 
           <label for="user-name">Nome</label>
-          <input type="text" name="user-name" id="user-name" required />
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            autocomplete="name"
+            required
+          />
 
           <label for="age">Idade</label>
-          <input type="number" name="age" id="age" min="12" max="100" required />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="12"
+            max="100"
+            required
+          />
 
           <label for="birthDate">Data de Nascimento</label>
           <input type="date" name="birthDate" id="birthDate" required />
 
           <label for="email">E-mail</label>
-          <input type="email" name="Email" id="email" required />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            autocomplete="email"
+            required
+          />
 
           <label for="tel">Telefone</label>
-          <input type="tel" name="tel" id="tel"/>
+          <input type="tel" name="tel" id="tel" autocomplete="tel" />
 
           <label for="profile-pic">Foto de Perfil</label>
-          <input type="file" name="profile-pic" id="profile-pic"/>
+          <input type="file" name="profile-pic" id="profile-pic" />
         </fieldset>
 
         <fieldset>
           <legend>PERFIL</legend>
 
           <label for="gender">Gênero</label>
-          <fieldset>
-            <input type="radio" id="man" name="gender" value="man" required/>
-            <label for="man">Homem</label>
 
-            <input type="radio" id="woman" name="gender" value="woman"/>
-            <label for="woman">Mulher</label>
+          <input type="radio" id="man" name="gender" value="man" required />
+          <label for="man">Homem</label>
 
-            <input type="radio" id="transgender" name="gender" value="transgender"/>
-            <label for="transgender">Transgênero</label>
+          <input type="radio" id="woman" name="gender" value="woman" />
+          <label for="woman">Mulher</label>
 
-            <input type="radio" id="dont-say" name="gender" value="dont-say"/>
-            <label for="dont-say">Prefiro não dizer</label>
-          </fieldset>
+          <input
+            type="radio"
+            id="transgender"
+            name="gender"
+            value="transgender"
+          />
+          <label for="transgender">Transgênero</label>
+
+          <input type="radio" id="dont-say" name="gender" value="dont-say" />
+          <label for="dont-say">Prefiro não dizer</label>
 
           <label for="marital-status">Estado Civil</label>
           <select name="marital-status" id="marital-status">
@@ -101,73 +127,144 @@
             <option value="TO">Tocantins</option>
           </select>
 
-        <label for="city">Cidade</label>
-          <input type="text" id="city" name="city" placeholder="Digite sua cidade" required>
+          <label for="city">Cidade</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Digite sua cidade"
+            required
+          />
         </fieldset>
 
         <fieldset>
-        <legend>HÁBITOS</legend>
-        <fieldset>
+          <legend>HÁBITOS</legend>
+
+          <fieldset>
             <legend>Redes Sociais</legend>
-            <input type="checkbox" name="social-media" id="social-x" value="x">
+            <input
+              type="checkbox"
+              name="social-media"
+              id="social-x"
+              value="x"
+            />
             <label for="social-x">X (Twitter)</label>
 
-            <input type="checkbox" name="social-media" id="social-instagram" value="instagram">
+            <input
+              type="checkbox"
+              name="social-media"
+              id="social-instagram"
+              value="instagram"
+            />
             <label for="social-instagram">Instagram</label>
 
-            <input type="checkbox" name="social-media" id="social-facebook" value="facebook">
+            <input
+              type="checkbox"
+              name="social-media"
+              id="social-facebook"
+              value="facebook"
+            />
             <label for="social-facebook">Facebook</label>
 
-            <input type="checkbox" name="social-media" id="social-tiktok" value="tiktok">
+            <input
+              type="checkbox"
+              name="social-media"
+              id="social-tiktok"
+              value="tiktok"
+            />
             <label for="social-tiktok">TikTok</label>
-        </fieldset>
 
-        <label for="style-music">Estilo Musical Favorito</label>
-        <input type="text" id="style-music" name="style-music" list="music-genres">
-        <datalist id="music-genres">
-                <option value="Pop"></option>
-                <option value="Rock"></option>
-                <option value="Sertanejo"></option>
-                <option value="Funk"></option>
-                <option value="MPB"></option>
-                <option value="Eletrônica"></option>
-                <option value="Hip Hop"></option>
-                <option value="Forró"></option>
-        </datalist>
+            <label for="style-music">Estilo Musical Favorito</label>
+            <input
+              type="text"
+              id="style-music"
+              name="style-music"
+              list="music-genres"
+            />
+            <datalist id="music-genres">
+              <option value="Pop"></option>
+              <option value="Rock"></option>
+              <option value="Sertanejo"></option>
+              <option value="Funk"></option>
+              <option value="MPB"></option>
+              <option value="Eletrônica"></option>
+              <option value="Hip Hop"></option>
+              <option value="Forró"></option>
+            </datalist>
 
-        <label for="favorite-color">Cor Favorita</label>
-        <input type="color" id="favorite-color" name="favorite-color" />
-
+            <label for="favorite-color">Cor Favorita</label>
+            <input type="color" id="favorite-color" name="favorite-color" />
+          </fieldset>
         </fieldset>
 
         <fieldset>
           <legend>QUAL SEU GRAU DE SATISFAÇÃO?</legend>
-          <input type="radio" id="satisfaction-great" name="satisfaction" value="great-satisfaction">
+          <input
+            type="radio"
+            id="satisfaction-great"
+            name="satisfaction"
+            value="great-satisfaction"
+          />
           <label for="satisfaction-great">Muito satisfeito</label>
 
-          <input type="radio" id="satisfaction-good" name="satisfaction" value="good-satisfaction">
+          <input
+            type="radio"
+            id="satisfaction-good"
+            name="satisfaction"
+            value="good-satisfaction"
+          />
           <label for="satisfaction-good">Bem satisfeito</label>
 
-          <input type="radio" id="satisfaction-regular" name="satisfaction" value="regular">
+          <input
+            type="radio"
+            id="satisfaction-regular"
+            name="satisfaction"
+            value="regular"
+          />
           <label for="satisfaction-regular">Ok</label>
 
-          <input type="radio" id="satisfaction-bad" name="satisfaction" value="not-satisfaction">
-          <label for="satisfaction-bad">Não estou satisfeito</label>   
+          <input
+            type="radio"
+            id="satisfaction-bad"
+            name="satisfaction"
+            value="not-satisfaction"
+          />
+          <label for="satisfaction-bad">Não estou satisfeito</label>
         </fieldset>
 
         <fieldset>
           <legend>FEEDBACK</legend>
           <label for="feedback">Deixe seu comentário</label>
-          <textarea name="feedback" id="feedback" placeholder="Conte pra gente o que achou da experiência..."></textarea>
+          <textarea
+            name="feedback"
+            id="feedback"
+            placeholder="Conte pra gente o que achou da experiência..."
+          ></textarea>
         </fieldset>
 
         <fieldset>
-            <legend>CONSENTIMENTO</legend>
-            <input type="checkbox" id="lgpd-consent" name="lgpd-consent" value="accepted" required>
-            <label for="lgpd-consent">Concordo com o tratamento dos meus dados pessoais, conforme a LGPD (Lei Geral de Proteção de Dados).</label>
+          <legend>CONSENTIMENTO</legend>
+          <input
+            type="checkbox"
+            id="lgpd-consent"
+            name="lgpd-consent"
+            value="accepted"
+            required
+          />
+          <label for="lgpd-consent"
+            >Concordo com o tratamento dos meus dados pessoais, conforme a LGPD
+            (Lei Geral de Proteção de Dados).</label
+          >
 
-            <input type="checkbox" name="email-results" id="email-results" value="accepted">
-            <label for="email-results">Desejo receber os resultados da pesquisa por e-mail</label>
+          <input
+            type="checkbox"
+            name="email-results"
+            id="email-results"
+            value="accepted"
+          />
+          <label for="email-results"
+            >Desejo receber os resultados da pesquisa por e-mail</label
+          >
         </fieldset>
         <button type="submit">ENVIAR</button>
         <button type="reset">APAGAR RESPOSTAS</button>
