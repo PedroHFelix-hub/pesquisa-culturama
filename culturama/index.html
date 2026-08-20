@@ -66,10 +66,12 @@
           <input type="file" name="profile-pic" id="profile-pic" />
         </fieldset>
 
-        <fieldset>
-          <legend>PERFIL</legend>
+    <fieldset> <legend>Perfil</legend>
 
-          <label for="gender">Gênero</label>
+        
+
+        <fieldset>
+          <legend for="gender">GÊNERO</legend>
 
           <input type="radio" id="man" name="gender" value="man" required />
           <label for="man">Homem</label>
@@ -77,22 +79,19 @@
           <input type="radio" id="woman" name="gender" value="woman" />
           <label for="woman">Mulher</label>
 
-          <input
-            type="radio"
-            id="transgender"
-            name="gender"
-            value="transgender"
-          />
+          <input type="radio" id="transgender" name="gender" value="transgender"/>
           <label for="transgender">Transgênero</label>
-
+        
           <input type="radio" id="dont-say" name="gender" value="dont-say" />
           <label for="dont-say">Prefiro não dizer</label>
-
+        </fieldset>
           <label for="marital-status">Estado Civil</label>
-          <select name="marital-status" id="marital-status">
+          <select name="marital-status" id="marital-status" required>
+            <option value="" disabled selected>Selecione uma opção...</option>
             <option value="single">Solteiro(a)</option>
             <option value="married">Casado(a)</option>
             <option value="divorced">Divorciado(a)</option>
+            <option value="widower">Viúvo(a)</option>
           </select>
 
           <label for="state">Estado onde você reside: </label>
@@ -133,10 +132,10 @@
             id="city"
             name="city"
             placeholder="Digite sua cidade"
-            required
+
           />
         </fieldset>
-
+</fieldset>
         <fieldset>
           <legend>HÁBITOS</legend>
 
@@ -173,13 +172,9 @@
               value="tiktok"
             />
             <label for="social-tiktok">TikTok</label>
-
+            </fieldset>
             <label for="style-music">Estilo Musical Favorito</label>
-            <input
-              type="text"
-              id="style-music"
-              name="style-music"
-              list="music-genres"
+            <input type="text" id="style-music" name="style-music" list="music-genres"
             />
             <datalist id="music-genres">
               <option value="Pop"></option>
@@ -194,7 +189,7 @@
 
             <label for="favorite-color">Cor Favorita</label>
             <input type="color" id="favorite-color" name="favorite-color" />
-          </fieldset>
+          
         </fieldset>
 
         <fieldset>
